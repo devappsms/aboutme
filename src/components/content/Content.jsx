@@ -23,7 +23,6 @@ import OpenWithSharpIcon from '@material-ui/icons/OpenWithSharp';
 
 import Qualification from "../qualification/QualificationPage"
 import SlideComp from "../slide/Slide"
-
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -71,8 +70,13 @@ const useStyles = (theme) => ({
   cardMedia: {
     height: 200,
   },
+  tab:{
+    background: 'linear-gradient(to left bottom, #430089, #82ffa1)',
+    color: 'white'
+  },
   panelTab:{
-    background: theme.palette.background
+    background: theme.palette.background,
+    textAlign:'center'
   }
 });
 
@@ -94,10 +98,10 @@ class Content extends React.Component {
         <Paper square>
           <Tabs
             value={this.state.value}
-            indicatorColor="primary"
-            textColor="primary"
+
             centered
             onChange={this.handleChange}
+            className={classes.tab}
           >
             <Tab label="About" />
             <Tab label="Qualification" />
@@ -111,6 +115,7 @@ class Content extends React.Component {
 
           I have worked for tier I companies around the world. */}
           <SlideComp/>
+          
       </TabPanel>
         <TabPanel value={this.state.value} index={1}>
           <Qualification/>
