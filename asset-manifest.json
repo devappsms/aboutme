@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/%7Baboutme%7D/static/css/main.5f361e03.chunk.css",
-    "main.js": "/%7Baboutme%7D/static/js/main.0535b519.chunk.js",
-    "main.js.map": "/%7Baboutme%7D/static/js/main.0535b519.chunk.js.map",
-    "runtime-main.js": "/%7Baboutme%7D/static/js/runtime-main.d71af6bb.js",
-    "runtime-main.js.map": "/%7Baboutme%7D/static/js/runtime-main.d71af6bb.js.map",
-    "static/css/2.fb346933.chunk.css": "/%7Baboutme%7D/static/css/2.fb346933.chunk.css",
-    "static/js/2.6372a5ef.chunk.js": "/%7Baboutme%7D/static/js/2.6372a5ef.chunk.js",
-    "static/js/2.6372a5ef.chunk.js.map": "/%7Baboutme%7D/static/js/2.6372a5ef.chunk.js.map",
-    "index.html": "/%7Baboutme%7D/index.html",
-    "precache-manifest.605034db7e75989e6f8bf7447c8d5d8e.js": "/%7Baboutme%7D/precache-manifest.605034db7e75989e6f8bf7447c8d5d8e.js",
-    "service-worker.js": "/%7Baboutme%7D/service-worker.js",
-    "static/css/2.fb346933.chunk.css.map": "/%7Baboutme%7D/static/css/2.fb346933.chunk.css.map",
-    "static/css/main.5f361e03.chunk.css.map": "/%7Baboutme%7D/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.6372a5ef.chunk.js.LICENSE.txt": "/%7Baboutme%7D/static/js/2.6372a5ef.chunk.js.LICENSE.txt",
-    "static/media/B.tech.png": "/%7Baboutme%7D/static/media/B.tech.48a4c62c.png",
-    "static/media/MERN-Stack.jpg": "/%7Baboutme%7D/static/media/MERN-Stack.3212a66c.jpg",
-    "static/media/experience.jpg": "/%7Baboutme%7D/static/media/experience.5937a55a.jpg",
-    "static/media/fullStack.jpg": "/%7Baboutme%7D/static/media/fullStack.61e36bc1.jpg",
-    "static/media/mainframe.jpg": "/%7Baboutme%7D/static/media/mainframe.f10a3ad1.jpg"
+    "main.css": "/aboutme/static/css/main.5f361e03.chunk.css",
+    "main.js": "/aboutme/static/js/main.117672c7.chunk.js",
+    "main.js.map": "/aboutme/static/js/main.117672c7.chunk.js.map",
+    "runtime-main.js": "/aboutme/static/js/runtime-main.95483440.js",
+    "runtime-main.js.map": "/aboutme/static/js/runtime-main.95483440.js.map",
+    "static/css/2.fb346933.chunk.css": "/aboutme/static/css/2.fb346933.chunk.css",
+    "static/js/2.3357fe79.chunk.js": "/aboutme/static/js/2.3357fe79.chunk.js",
+    "static/js/2.3357fe79.chunk.js.map": "/aboutme/static/js/2.3357fe79.chunk.js.map",
+    "index.html": "/aboutme/index.html",
+    "precache-manifest.b9c263ba5a038a422c8190f0d6189492.js": "/aboutme/precache-manifest.b9c263ba5a038a422c8190f0d6189492.js",
+    "service-worker.js": "/aboutme/service-worker.js",
+    "static/css/2.fb346933.chunk.css.map": "/aboutme/static/css/2.fb346933.chunk.css.map",
+    "static/css/main.5f361e03.chunk.css.map": "/aboutme/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.3357fe79.chunk.js.LICENSE.txt": "/aboutme/static/js/2.3357fe79.chunk.js.LICENSE.txt",
+    "static/media/B.tech.png": "/aboutme/static/media/B.tech.48a4c62c.png",
+    "static/media/MERN-Stack.jpg": "/aboutme/static/media/MERN-Stack.3212a66c.jpg",
+    "static/media/experience.jpg": "/aboutme/static/media/experience.5937a55a.jpg",
+    "static/media/fullStack.jpg": "/aboutme/static/media/fullStack.61e36bc1.jpg",
+    "static/media/mainframe.jpg": "/aboutme/static/media/mainframe.f10a3ad1.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d71af6bb.js",
+    "static/js/runtime-main.95483440.js",
     "static/css/2.fb346933.chunk.css",
-    "static/js/2.6372a5ef.chunk.js",
+    "static/js/2.3357fe79.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.0535b519.chunk.js"
+    "static/js/main.117672c7.chunk.js"
   ]
 }
