@@ -5,15 +5,17 @@ import expImage from "../../images/experience.jpg";
 import fullStack from "../../images/fullStack.jpg";
 import domain from "../../images/domain.png";
 import { withStyles } from '@material-ui/core';
+import './SlideStyles.css'
 
 const useStyles = (theme) => ({
     root: {
-        maxHeight: 400,
-       maxWidth: 1000
+       height: 400,
+       wWidth: '100%',
+       display:'block'
     },
-    image:{
-        height: '100%',
-        width: '100%'
+    img : { 
+        width:'100%',
+        height:'100%', 
     }
   });
 
@@ -26,20 +28,22 @@ class SlideComp extends React.Component{
         }
     }
     render(){
-        const {classes} = this.props
+        // const {classes} = this.props
         return(
-            <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} dynamicHeight={false}>
             <div >
-                <img src={expImage} alt="" className={classes.image} />
+            <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true}>
+            <div >
+                <img src={expImage} alt="" />
                 {/* <p className="legend">Legend 1</p> */}
             </div>
             <div >
-                <img src={fullStack} alt="" className={classes.image}/>
+                <img src={fullStack} alt="" />
             </div>
-            <div className={classes.image}>
-                <img src={domain} alt="" className={classes.image}/>
+            <div>
+                <img src={domain} alt="" />
             </div>
         </Carousel>
+        </div>
         )
     }
 }

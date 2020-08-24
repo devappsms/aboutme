@@ -8,10 +8,15 @@ import Avatar from '@material-ui/core/Avatar';
 import { withStyles } from '@material-ui/core';
 import Content from "../content/Content";
 import Footer from "../footer/Footer";
-import man from "../../images/man-profile.jpg"
+import man from "../../images/man-profile.jpg";
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
 const useStyles = (theme) => ({
   root: {
     flexGrow: 1,
+  },
+  appBar:{
+     background: theme.palette.background.paper
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -22,31 +27,58 @@ const useStyles = (theme) => ({
   },
 });
 
+const ThemeContext = React.createContext('light');
 class AboutMe extends React.Component {
 
-  super(props) {
+  constructor(props) {
+    super();
+    this.state={
+      anchorEl : null,
+    }
+  }
 
+  ThemeContext = React.createContext('light');
+
+  handleSelected = (value) =>{
+    this.setState({anchorEl: null })
+    this.props.changeTheme()
+  }
+
+  handleClick = (e) =>{
+    this.setState({anchorEl: e.currentTarget })
   }
   render() {
     const { classes } = this.props;
+    console.log(this.state)
     return (
-      <React.Fragment>
-      <div className={classes.root} color='primary'>
-        <AppBar position="static">
-          <Toolbar>
-            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-              <MenuIcon />
-            </IconButton>
-            <Typography variant="h6" className={classes.title}>
-              Mohendren Manickam
+      <div>
+        <div className={classes.root} >
+          <AppBar position="static" className={classes.appBar}>
+            <Toolbar>
+              {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu"
+               onClick={this.handleClick}>
+                <MenuIcon />
+              </IconButton>
+              <Menu
+                id="simple-menu"
+                anchorEl={this.state.anchorEl}
+                keepMounted
+                open={Boolean(this.state.anchorEl)}
+                onClose={this.handleClose}
+              >
+                <MenuItem onClick={this.handleSelected}>Light Theme</MenuItem>
+                <MenuItem onClick={this.handleSelected}>Dark Theme</MenuItem>
+              </Menu> */}
+              <Typography variant="h6" className={classes.title}>
+                Mohendren Manickam
                 </Typography>
-            <Avatar alt="Mohendren" src={man}></Avatar>
-          </Toolbar>
-        </AppBar>
+              <Avatar alt="Mohendren" src={man}></Avatar>
+            </Toolbar>
+          </AppBar>
+        </div>
+        <Content />
+        <Footer />
       </div>
-      <Content />
-      <Footer />
-      </React.Fragment>
     )
   }
 }
