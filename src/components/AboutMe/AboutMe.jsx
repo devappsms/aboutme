@@ -77,7 +77,7 @@ class AboutMe extends React.Component {
           </AppBar>
         </div>
         <Content />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     )
   }

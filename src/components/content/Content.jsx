@@ -12,6 +12,7 @@ import appConstants from "../constants/appConstants";
 import About from "../me/About"
 import WorkExperience from "../Work/Experience";
 import Service from "../service/Services"
+import Contact from "../contact/Contact"
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -100,6 +101,9 @@ class Content extends React.Component {
         </TabPanel>
         <TabPanel value={this.state.value} index={2} className={classes.panelTab}> 
           <Service/>
+        </TabPanel>
+        <TabPanel value={this.state.value} index={3} className={classes.panelTab}> 
+          <Contact/>
         </TabPanel>
       </div>
     )

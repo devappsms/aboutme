@@ -3,6 +3,7 @@ const  appConstants = {
         'About',
         'Work Experience',
         'Services',
+        'Get in Touch'
         // // 'Process',
         // 'Contact'
     ],
