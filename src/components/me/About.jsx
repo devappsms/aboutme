@@ -115,7 +115,7 @@ class About extends React.Component {
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" >
-                      I was trained on Mainframe Technology.
+                      I was trained in Mainframe Technology.
                 </Typography>
                   </CardContent>
                 </CardActionArea>
