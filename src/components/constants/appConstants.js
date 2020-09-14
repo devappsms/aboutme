@@ -17,10 +17,10 @@ const  appConstants = {
     services: [
         "Web Application Development",
         "Mobile Application Development",
-        "Front-End Development",
-        "Back-End Development",
+        "Enterprise Application Development",
+        "Desktop application Development",
         "Payment Integration",
-        "Query Development and Optimization",
+        "Cloud Services",
    
     ]
 }
